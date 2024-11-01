@@ -1,0 +1,12 @@
+
+CFL = 0.8
+gamma = 1.4
+ITER = 100000000
+WRT_ITER = 100
+DEBUG = False
+GLOBAL_TIME_STEP = False
+TIME_STEP = 1e-9
+FLUX_SCHEME = 'ROE'     # 'ROE' || 'VAN_LEER'
+# RK_COEF = [0.0533, 0.1263, 0.2375, 0.4414, 1.0]
+RK_COEF = [0.0833, 0.2069, 0.4265, 1.0]
+# RK_COEF = [1.0/4.0, 1.0/3.0, 1.0/2.0, 1.0]
