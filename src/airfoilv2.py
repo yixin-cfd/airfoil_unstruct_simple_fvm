@@ -270,10 +270,10 @@ class Airfoil:
         DF5_3 = factor3*(va+ca*ny)
         DF5_4 = factor3*(Ha + ca*Va)
         # flux
-        F1 = 0.5 * (FL1 + FR1) - (DF1_1 + DF24_1 + DF5_1)
-        F2 = 0.5 * (FL2 + FR2) - (DF1_2 + DF24_2 + DF5_2)
-        F3 = 0.5 * (FL3 + FR3) - (DF1_3 + DF24_3 + DF5_3)
-        F4 = 0.5 * (FL4 + FR4) - (DF1_4 + DF24_4 + DF5_4)
+        F1 = 0.5 * ((FL1 + FR1) - (DF1_1 + DF24_1 + DF5_1))
+        F2 = 0.5 * ((FL2 + FR2) - (DF1_2 + DF24_2 + DF5_2))
+        F3 = 0.5 * ((FL3 + FR3) - (DF1_3 + DF24_3 + DF5_3))
+        F4 = 0.5 * ((FL4 + FR4) - (DF1_4 + DF24_4 + DF5_4))
         #
         F1 *= S
         F2 *= S
