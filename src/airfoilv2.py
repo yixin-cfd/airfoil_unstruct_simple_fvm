@@ -154,7 +154,7 @@ class Airfoil:
         elif MR <= -1:
             MRn = MR
         else:
-            MRn = -0.25*(MR-1.0)**2
+            MRn = 0.25*(MR-1.0)**2
         Mn = MLp + MRn
         if Mn>=1.0 :
             F1 = rL * V_L
@@ -251,8 +251,8 @@ class Airfoil:
         dV = V_R - V_L
         factor1 = abs(Va-ca)*0.5*(dp-ra*ca*dV)/(ca*ca)
         DF1_1 = factor1
-        DF1_2 = factor1*ua-ca*nx
-        DF1_3 = factor1*va-ca*ny
+        DF1_2 = factor1*(ua-ca*nx)
+        DF1_3 = factor1*(va-ca*ny)
         DF1_4 = factor1*(Ha - ca*Va)
         # DF2,3,4
         dr = rR -rL
